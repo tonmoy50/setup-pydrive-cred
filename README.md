@@ -2,13 +2,19 @@
 In this article I am going to help you setup an oauth key in google drive and use a simple technique  to save the access token. So, this will enable us not to verify access everytime we make an api call. 
 ## Now follow the below steps to create OAuth key, 
 - First go to [Google's developer Console](https://console.developers.google.com/projectselector2/apis/dashboard?authuser=1&supportedpurview=project).
-- You should see "Select A Project" on top left corner just right of the "Google API" logo. If you already have a project you will see the selected project name. Click it and it will open a popup window that will assist you to create a new project.
+- You should see "Select A Project" on top left corner just right of the "Google API" logo. If you already have a project you will see the selected project name. Click it and it will open a popup window that will assist you to create a new project. Reference,
+![image](https://user-images.githubusercontent.com/22047627/111424104-7ca53280-871b-11eb-8759-0c912cf3da31.png)
+![image](https://user-images.githubusercontent.com/22047627/111424132-875fc780-871b-11eb-94c8-c35589d55bf2.png)
 - After you have created the project, add Google drive api from select api screen
 - Now that you have selected you are api you need to configure OAuth2.0 key. So, head over to "Credentials" by selecting from the left panel and create a new OAuth key. You should see the option on the top panel.
 - On the configuration page give any name you like to client name, however you should use the gmail id you want to use for testing in the "Test User" section.
-- Also, Make sure you have put `http://localhost:8080` in the "Authorized Javascript Origin" and `http://localhost:8080/` in "Authorized Redirect URI" otherwise the key will not work. 
+- Also, Make sure you have put `http://localhost:8080` in the "Authorized Javascript Origin" and `http://localhost:8080/` in "Authorized Redirect URI" otherwise the key will not work. Reference,
+![image](https://user-images.githubusercontent.com/22047627/111424292-c130ce00-871b-11eb-8f6b-3c2cda4f9d03.png)
+
 - Save the oAuth2.0 key
-- After you have saved it you should see your OAuth key in the "Credential" page with your given client name
+- After you have saved it you should see your OAuth key in the "Credential" page with your given client name. Reference,
+![image](https://user-images.githubusercontent.com/22047627/111424221-a8281d00-871b-11eb-8800-5fbeac364978.png)
+
 - From there download the key. You will see a download icon just right of the key.
 
 ## Getting Access Token
